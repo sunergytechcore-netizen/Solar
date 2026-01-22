@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
+/* MainLayout.css or App.css */
+/* Force content to start from left edge */
+main {
+  left: 0 !important;
+  margin-left: 0 !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Target the main content wrapper */
+.main-content-wrapper {
+  left: 0 !important;
+  margin-left: 0 !important;
+  max-width: 100% !important;
+  padding-left: 0 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Ensure all direct children of main content have border radius */
+.main-content-wrapper > * {
+  border-radius: 12px; /* Adjust this value as needed */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* If you want to apply border-radius to specific page components */
+.main-content-wrapper .page-container,
+.main-content-wrapper .MuiPaper-root,
+.main-content-wrapper .MuiCard-root {
+  border-radius: 12px !important;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Remove container constraints */
+.MuiContainer-root {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
 }
