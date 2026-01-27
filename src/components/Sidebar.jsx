@@ -58,7 +58,7 @@ import {
 } from "@mui/icons-material";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
-import logo from "../saura_shakti_logo.png"; // Import the logo
+import logo from "../logo.svg"; // Import the logo
 
 // Constants
 const SIDEBAR_WIDTH = 280;

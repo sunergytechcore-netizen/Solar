@@ -35,7 +35,7 @@ import {
   CheckCircleOutline
 } from '@mui/icons-material';
 import { useAuth } from '../../contexts/AuthContext';
-import logo from '../../saura_shakti_logo.png';
+import logo from '../../logo.svg';
 
 // Validation error types
 const ERROR_TYPES = {

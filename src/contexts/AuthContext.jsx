@@ -2,7 +2,7 @@
 import React, { createContext, useState, useContext, useEffect, useCallback } from "react";
 const AuthContext = createContext({});
 
-const API_BASE_URL = "https://admin.saurashakti.com/api/v1";
+const API_BASE_URL = "http://13.201.173.28:9001/api/v1";
 
 export const useAuth = () => {
   const context = useContext(AuthContext);
