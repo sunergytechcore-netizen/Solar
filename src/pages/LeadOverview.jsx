@@ -106,6 +106,8 @@ import {
 } from "@mui/icons-material";
 import { useAuth } from "../contexts/AuthContext";
 import { format, parseISO, isValid } from "date-fns";
+import { useNavigate } from 'react-router-dom'
+
 
 // ========== CONSTANTS & UTILITIES ==========
 
@@ -2083,6 +2085,7 @@ const LeadOverview = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isTablet = useMediaQuery(theme.breakpoints.between("sm", "md"));
+  const navigate = useNavigate();
 
   // State Management
   const [leads, setLeads] = useState([]);
@@ -2138,6 +2141,10 @@ const LeadOverview = () => {
     () => leads.filter((lead) => selectedLeads.includes(lead._id)),
     [leads, selectedLeads]
   );
+
+ const addLeads = () => {
+    navigate('/add-lead')
+ }
 
   // Snackbar helper function
   const showSnackbar = useCallback((message, severity = "success") => {
@@ -2720,6 +2727,7 @@ const LeadOverview = () => {
           <Button
             variant="contained"
             startIcon={<Add />}
+            onClick={addLeads}
             sx={{
               bgcolor: PRIMARY_COLOR,
               borderRadius: 2,
