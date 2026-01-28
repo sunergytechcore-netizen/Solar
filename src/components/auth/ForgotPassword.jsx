@@ -564,7 +564,7 @@ const ForgotPassword = () => {
                   display: 'block'
                 }}
               >
-                © {new Date().getFullYear()} Saura Shakti. All rights reserved.
+                © {new Date().getFullYear()} Sunergytech. All rights reserved.
               </Typography>
             </Fade>
           </Paper>

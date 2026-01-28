@@ -549,7 +549,7 @@ const Sidebar = ({ open, toggleDrawer }) => {
           >
             <img
               src={logo}
-              alt="Saura Shakti Logo"
+              alt="Sunergytech Logo"
               style={{
                 width: "100%",
                 height: "100%",
@@ -579,7 +579,7 @@ const Sidebar = ({ open, toggleDrawer }) => {
                   textOverflow: "ellipsis",
                 }}
               >
-                Saura Shakti
+                Sunergytech
               </Typography>
               <Typography
                 variant="caption"
@@ -810,7 +810,7 @@ const Sidebar = ({ open, toggleDrawer }) => {
               >
                 <img
                   src={logo}
-                  alt="Saura Shakti Logo"
+                  alt="Sunergytech Logo"
                   style={{
                     width: "100%",
                     height: "100%",
@@ -825,7 +825,7 @@ const Sidebar = ({ open, toggleDrawer }) => {
                   fontWeight={800}
                   color={theme.palette.primary.main}
                 >
-                  Saura Shakti
+                  Sunergytech
                 </Typography>
                 <Typography variant="caption" color="text.secondary">
                   Solar Management
@@ -890,7 +890,7 @@ const Sidebar = ({ open, toggleDrawer }) => {
             color="text.secondary"
             sx={{ fontSize: "0.75rem", fontWeight: 500 }}
           >
-            © 2025 Saura Shakti • v2.1.0
+            © 2025 Sunergytech • v2.1.0
           </Typography>
           <IconButton
             onClick={logout}

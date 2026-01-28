@@ -940,7 +940,7 @@ const Login = () => {
               }}>
                 <Smartphone sx={{ fontSize: 20, color: 'primary.main' }} />
                 <Typography variant="caption" sx={{ color: 'text.secondary', fontWeight: 500 }}>
-                  Saura Shakti Mobile
+                  Sunergytech Mobile
                 </Typography>
               </Box>
             )}
@@ -978,7 +978,7 @@ const Login = () => {
                   {/* Logo Image */}
                   <img 
                     src={logo} 
-                    alt="Saura Shakti Logo" 
+                    alt="Sunergytech Logo" 
                     style={{
                       width: '100%',
                       height: '100%',
@@ -1290,7 +1290,7 @@ const Login = () => {
                   lineHeight: 1.4
                 }}
               >
-                © {new Date().getFullYear()} Saura Shakti Solar Management System. All rights reserved.
+                © {new Date().getFullYear()} Sunergytech Solar Management System. All rights reserved.
                 <br />
                 <Typography 
                   component="span" 
